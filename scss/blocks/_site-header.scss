@@ -1,0 +1,136 @@
+.site-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.site-header__left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+    .site-logo__wrapper {
+      margin-right: 26px;
+        img {
+          display: inline-block;
+        }
+    }
+
+    .header-left__txt {
+      color: #0096dc;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: left;
+  }
+
+}
+
+.site-header__center {
+  display: inline-block;
+  position: relative;
+  padding: 15px;
+  padding-left: 45px;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 2px solid #55a831;
+  color: #55a831;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.site-header__center:hover {
+  opacity: .8;
+}
+.site-header__center:active {
+  opacity: .6;
+}
+
+.site-header__center::after {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translate(-10px,-50%);
+  background-image: url(../../img/pen-ruler.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+
+.site-header__right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.work-day {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 70px;
+    span {
+      /* Style for "без выходн" */
+      width: 95px;
+      height: 14px;
+      color: #333333;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: left;
+      /* Text style for "без выходн" */
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+    }
+}
+
+.contact-us {
+  P {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: "Open Sans";
+    font-size: 23px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: right;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+  }
+  a {
+    text-decoration: none;
+    color: #0089cc;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: right;
+    text-decoration: underline;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+  }
+}
+
+// MEDIAQUERY

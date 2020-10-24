@@ -1,5 +1,5 @@
 .hero {
-  min-height: 640px;
+  min-height: 600px;
   background-image: url(../../img/hero-bg@2x.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -8,7 +8,40 @@
 }
 .hero__wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+
+  padding-top: 120px;
+}
+
+.hero-left__txt {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  color: #333333;
+  font-size: 26px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 48px;
+  text-align: left;
+}
+
+.hero-left__heading {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 135px;
+  color: #333;
+  font-size: 55px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 48px;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+
 }
 
 .hero__left {
@@ -18,24 +51,160 @@
   justify-content: center;
 }
 
-.hero-left {
-  .hero-left__stat {
-    display: inline-flex;
-    text-align: center;
-    align-items: flex-end;
-    padding: 50px 22px  29px 24px;
-    width: 110px;
-    height: 110px;
-    border: 1px solid #ffffff;
-    background-color: #0d8fe3;
-    border-radius: 50%;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 400;
-  }
+.hero-left__stat {
+  position: relative;
+}
+
+.hero-left__stat:first-child:before {
+  width: 44px;
+  height: 52px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-image: url(../../img/hero-quality-img.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.hero-left__stat:nth-child(2):before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 42px;
+  height: 52px;
+  background-image: url(../../img/hero-time_img.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.hero-left__stat:nth-child(3):before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 42px;
+  height: 52px;
+  background-image: url(../../img/hero-election-event-on-a-calendar-with-star-symbol.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+
+.hero-left__stat:nth-child(4):before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 42px;
+  height: 52px;
+  background-image: url(../../img/delivery-truck-silhouette-img.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.hero-left__stat {
+  width: 110px;
+  height: 110px;
+  display: inline-flex;
+  padding: 50px 22px  29px 24px;
+  text-align: center;
+  align-items: flex-end;
+  border: 1px solid #fff;
+  background-color: #0d8fe3;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .hero-form {
   display: flex;
   flex-direction: column;
+  min-width: 370px;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 20px 25px;
+}
+
+.hero-form__txt {
+  padding: 0;
+  margin: 0;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 48px;
+  text-align: center;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-bottom: 9px;
+}
+
+
+.hero-form__heading {
+  padding: 0;
+  margin: 0;
+  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 48px;
+  text-align: center;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+
+.hero-form__input {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  color: #999999;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 48px;
+  text-align: center;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  border: 1px solid #d1d1d1;
+}
+
+.hero-btn {
+  margin-bottom: 20px;
+}
+
+.hero-form__span {
+  color: #666666;
+  font-size: 11px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 48px;
+  text-align: center;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
 }
